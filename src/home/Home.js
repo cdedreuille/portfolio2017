@@ -34,11 +34,11 @@ class Home extends Component {
             <div className='title'>Christian Louboutin</div><br />
             <div className='tags'>Digital Branding, Global Experience</div>
           </Link>
-          <Link className="item" to='/kapture'>
+          <a className="item" href='https://getkapture.com' target="_blank" rel="noopener noreferrer">
             <img src={thumbnail3} alt='Project' />
             <div className='title'>Kapture</div><br />
             <div className='tags'>Experiment, Visual Boomarking</div>
-          </Link>
+          </a>
           <Link className="item" to='/field'>
             <img src={thumbnail5} alt='Project' />
             <div className='title'>Field.io</div><br />
@@ -74,21 +74,21 @@ class Home extends Component {
             <div className='title'>Christian Louboutin</div><br />
             <div className='tags'>Video, Leather Goods</div>
           </Link>
-          <Link className="item" to='/lasurprise'>
+          <a className="item" href='https://lasurprise.io' target="_blank" rel="noopener noreferrer">
             <img src={thumbnail8} alt='Project' />
             <div className='title'>La Surprise.io</div><br />
             <div className='tags'>Experiment, Chatbot</div>
-          </Link>
+          </a>
           <Link className="item" to='/floom'>
             <img src={thumbnail10} alt='Project' />
             <div className='title'>Floom</div><br />
             <div className='tags'>Website, Marketplace</div>
           </Link>
-          <Link className="item" to='/juun'>
+          <a className="item" href='https://juun.io' target="_blank" rel="noopener noreferrer">
             <img src={thumbnail12} alt='Project' />
             <div className='title'>Juun Project Planner</div><br />
             <div className='tags'>Experiment, Project Planning</div>
-          </Link>
+          </a>
         </div>
       </div>
     );

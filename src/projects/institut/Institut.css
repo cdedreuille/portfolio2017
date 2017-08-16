@@ -1,51 +1,71 @@
-.ChristianLouboutin {
+.Institut {
   margin: 80px 80px 180px 80px;
   width: calc(100% - 160px); }
-  .ChristianLouboutin img {
+  .Institut img {
     width: 100%; }
-    .ChristianLouboutin img.imgMargin {
+    .Institut img.imgMargin {
       display: block;
       margin-bottom: 60px; }
-  .ChristianLouboutin video.vidMargin {
+  .Institut video.vidMargin {
     display: block;
     margin-bottom: 60px; }
-  .ChristianLouboutin h2 {
+  .Institut h2 {
     text-align: center;
     font-size: 26px;
     line-height: 42px;
     font-weight: 300;
     margin: 100px auto;
     max-width: 70%; }
-  .ChristianLouboutin .infos {
+  .Institut .infos {
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
     padding: 60px 0 50px 0;
     margin: 60px 0; }
-    .ChristianLouboutin .infos span {
+    .Institut .infos span {
       color: #000;
       font-weight: 300; }
-    .ChristianLouboutin .infos p {
+    .Institut .infos p {
       color: #a0a0a0;
       font-weight: 300; }
-    .ChristianLouboutin .infos .column1 {
+    .Institut .infos .column1 {
       display: inline-block;
       vertical-align: top;
       width: calc(37% - 60px);
       margin-right: 60px; }
-    .ChristianLouboutin .infos .column2 {
+    .Institut .infos .column2 {
       display: inline-block;
       vertical-align: top;
       width: calc(20% - 20px);
       margin-right: 20px; }
-    .ChristianLouboutin .infos .column3 {
+    .Institut .infos .column3 {
       display: inline-block;
       vertical-align: top;
       width: calc(15% - 20px);
       margin-right: 20px; }
-    .ChristianLouboutin .infos .column4 {
+    .Institut .infos .column4 {
       display: inline-block;
       vertical-align: top;
       width: 28%; }
-  .ChristianLouboutin .logo {
-    width: 200px;
+  .Institut .shapes {
+    margin-bottom: 60px; }
+    .Institut .shapes .column {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(33.33% - 80px);
+      margin: 0 40px;
+      text-align: center; }
+      .Institut .shapes .column span {
+        color: #000;
+        font-weight: 300; }
+      .Institut .shapes .column p {
+        color: #a0a0a0;
+        font-weight: 300; }
+  .Institut .collection {
+    display: block;
+    width: 80%;
     margin: 0 auto 60px auto; }
+  .Institut .imgMarginLeft img {
+    width: 70%; }
+  .Institut .imgMarginRight img {
+    width: 70%;
+    margin-left: 30%; }

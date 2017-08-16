@@ -59,7 +59,7 @@ class Home extends Component {
             <div className='title'>EdClub</div><br />
             <div className='tags'>Web App, Animations, Education</div>
           </Link>
-          <Link className="item" to='/institut-des-mutations'>
+          <Link className="item" to='/institut'>
             <img src={thumbnail2} alt='Project' />
             <div className='title'>Institut des Mutations</div><br />
             <div className='tags'>Generative Identity</div>

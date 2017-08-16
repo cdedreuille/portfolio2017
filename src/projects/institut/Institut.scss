@@ -1,4 +1,4 @@
-.ChristianLouboutin {
+.Institut {
   margin: 80px 80px 180px 80px;
   width: calc(100% - 160px);
 
@@ -71,8 +71,44 @@
     }
   }
 
-  .logo {
-    width: 200px;
+  .shapes {
+    margin-bottom: 60px;
+
+    .column {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(33.33% - 80px);
+      margin: 0 40px;
+      text-align: center;
+
+      span {
+        color: #000;
+        font-weight: 300;
+      }
+
+      p {
+        color: #a0a0a0;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .collection {
+    display: block;
+    width: 80%;
     margin: 0 auto 60px auto;
+  }
+
+  .imgMarginLeft {
+    img {
+      width: 70%;
+    }
+  }
+
+  .imgMarginRight {
+    img {
+      width: 70%;
+      margin-left: 30%;
+    }
   }
 }

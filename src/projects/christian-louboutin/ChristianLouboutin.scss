@@ -1,0 +1,57 @@
+.ChristianLouboutin {
+  margin: 80px 80px 180px 80px;
+  width: calc(100% - 160px);
+
+  img {
+    width: 100%;
+
+    &.imgMargin {
+      display: block;
+      margin-bottom: 60px;
+    }
+  }
+
+  .infos {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 60px 0 50px 0;
+    margin: 60px 0;
+
+    span {
+      color: #000;
+      font-weight: 300;
+    }
+
+    p {
+      color: #a0a0a0;
+      font-weight: 300;
+    }
+
+    .column1 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(37% - 60px);
+      margin-right: 60px;
+    }
+
+    .column2 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(20% - 20px);
+      margin-right: 20px;
+    }
+
+    .column3 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(15% - 20px);
+      margin-right: 20px;
+    }
+
+    .column4 {
+      display: inline-block;
+      vertical-align: top;
+      width: 28%;
+    }
+  }
+}

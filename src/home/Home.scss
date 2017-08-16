@@ -1,0 +1,76 @@
+.Home {
+  margin: 80px 0 0 80px;
+  width: calc(100% - 160px);
+
+  .portrait {
+    position: relative;
+
+    .intro {
+      position: absolute;
+      top: 20%;
+      left: 8%;
+
+      span {
+        &:nth-child(1) {
+          display: block;
+          margin-bottom: 60px;
+        }
+
+        &:nth-child(2) {
+          display: block;
+          width: 360px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .masonry {
+    margin: 6em 0;
+    padding: 0;
+    column-gap: 6em;
+
+    .item {
+      display: inline-block;
+      margin: 0 0 6em;
+      width: 100%;
+      box-sizing: border-box;
+      cursor: default;
+
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .title {
+        cursor: pointer;
+        display: inline-block;
+        color: #000;
+        margin-top: 15px;
+      }
+
+      .tags {
+        cursor: pointer;
+        display: inline-block;
+        color: #a0a0a0;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
+
+  @media only screen and (min-width: 400px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+}

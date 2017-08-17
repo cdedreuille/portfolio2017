@@ -55,7 +55,7 @@ class ChristianLouboutin extends Component {
           </MediaQuery>
         </div>
         <img className='imgMargin' src={christianlouboutin2} alt='Christian Louboutin' />
-        <h2>Restructure of the entire site<br />as mobile-first</h2>
+        <h2>Restructure of the entire site as mobile-first</h2>
         <video className='vidMargin' width="100%" controls poster={posterBirds}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Birds+3.mp4" type="video/mp4" />
         </video>

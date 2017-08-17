@@ -20,6 +20,11 @@
     font-weight: 300;
     margin: 100px auto;
     max-width: 70%; }
+    @media screen and (max-width: 800px) {
+      .LouboutinSpikes h2 {
+        max-width: 90%;
+        font-size: 22px;
+        line-height: 36px; } }
   .LouboutinSpikes .infos {
     border-bottom: 1px solid #E1E1E1;
     padding: 0 0 50px 0;

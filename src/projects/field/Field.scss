@@ -1,0 +1,97 @@
+.Field {
+  margin: 80px 80px 180px 80px;
+  width: calc(100% - 160px);
+
+  img {
+    width: 100%;
+
+    &.imgMargin {
+      display: block;
+      margin-bottom: 60px;
+    }
+  }
+
+  video {    
+    &.vidMargin {
+      display: block;
+      margin-bottom: 60px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 300;
+    margin: 100px auto;
+    max-width: 70%;
+  }
+
+  .infos {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 60px 0 50px 0;
+    margin: 60px 0;
+
+    span {
+      color: #000;
+      font-weight: 300;
+    }
+
+    p {
+      color: #a0a0a0;
+      font-weight: 300;
+    }
+
+    .column1 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(37% - 60px);
+      margin-right: 60px;
+    }
+
+    .column2 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(20% - 20px);
+      margin-right: 20px;
+    }
+
+    .column3 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(15% - 20px);
+      margin-right: 20px;
+    }
+
+    .column4 {
+      display: inline-block;
+      vertical-align: top;
+      width: 28%;
+    }
+  }
+
+  .videoRight {
+    margin-left: 30%;
+  }
+
+  .imgMarginLeft {
+    img {
+      width: 60%;
+    }
+  }
+
+  .imgMarginCenter {
+    img {
+      width: 60%;
+      margin-left: 20%;
+    }
+  }
+
+  .imgMarginRight {
+    img {
+      width: 60%;
+      margin-left: 40%;
+    }
+  }
+}

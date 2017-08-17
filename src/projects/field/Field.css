@@ -1,0 +1,58 @@
+.Field {
+  margin: 80px 80px 180px 80px;
+  width: calc(100% - 160px); }
+  .Field img {
+    width: 100%; }
+    .Field img.imgMargin {
+      display: block;
+      margin-bottom: 60px; }
+  .Field video.vidMargin {
+    display: block;
+    margin-bottom: 60px; }
+  .Field h2 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 300;
+    margin: 100px auto;
+    max-width: 70%; }
+  .Field .infos {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 60px 0 50px 0;
+    margin: 60px 0; }
+    .Field .infos span {
+      color: #000;
+      font-weight: 300; }
+    .Field .infos p {
+      color: #a0a0a0;
+      font-weight: 300; }
+    .Field .infos .column1 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(37% - 60px);
+      margin-right: 60px; }
+    .Field .infos .column2 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(20% - 20px);
+      margin-right: 20px; }
+    .Field .infos .column3 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(15% - 20px);
+      margin-right: 20px; }
+    .Field .infos .column4 {
+      display: inline-block;
+      vertical-align: top;
+      width: 28%; }
+  .Field .videoRight {
+    margin-left: 30%; }
+  .Field .imgMarginLeft img {
+    width: 60%; }
+  .Field .imgMarginCenter img {
+    width: 60%;
+    margin-left: 20%; }
+  .Field .imgMarginRight img {
+    width: 60%;
+    margin-left: 40%; }

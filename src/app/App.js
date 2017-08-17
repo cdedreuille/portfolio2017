@@ -6,6 +6,8 @@ import ChristianLouboutin from '../projects/christian-louboutin/ChristianLoubout
 import Institut from '../projects/institut/Institut';
 import CocaCola from '../projects/coca-cola/CocaCola';
 import LouboutinSpikes from '../projects/louboutin-spikes/LouboutinSpikes';
+import Field from '../projects/field/Field';
+import Floom from '../projects/floom/Floom';
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
           <Route path="/institut" component={Institut}/>
           <Route path="/coca-cola" component={CocaCola}/>
           <Route path="/louboutin-spikes" component={LouboutinSpikes}/>
+          <Route path="/field" component={Field}/>
+          <Route path="/floom" component={Floom}/>
         </div>
       </Router>
     );

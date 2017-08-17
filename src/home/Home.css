@@ -1,5 +1,5 @@
 .Home {
-  margin: 80px 0 0 80px;
+  padding: 80px 0 0 80px;
   width: calc(100% - 160px); }
   @media screen and (max-width: 800px) {
     .Home {
@@ -47,7 +47,8 @@
       margin: 0 0 6em;
       width: 100%;
       box-sizing: border-box;
-      cursor: default; }
+      cursor: default;
+      text-decoration: none; }
       @media screen and (max-width: 800px) {
         .Home .masonry .item {
           margin-bottom: 60px; } }
@@ -56,14 +57,14 @@
         cursor: pointer; }
       .Home .masonry .item .title {
         cursor: pointer;
-        display: inline-block;
+        display: block;
         color: #000;
         margin-top: 15px; }
       .Home .masonry .item .tags {
         cursor: pointer;
         display: inline-block;
         color: #a0a0a0;
-        margin-top: 10px; }
+        margin-top: 3px; }
   @media only screen and (max-width: 400px) {
     .Home .masonry {
       column-count: 1; } }

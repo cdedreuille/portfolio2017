@@ -1,5 +1,5 @@
 .Home {
-  margin: 80px 0 0 80px;
+  padding: 80px 0 0 80px;
   width: calc(100% - 160px);
 
   @media screen and (max-width: 800px) {
@@ -71,6 +71,7 @@
       width: 100%;
       box-sizing: border-box;
       cursor: default;
+      text-decoration: none;
 
       @media screen and (max-width: 800px) {
         margin-bottom: 60px;
@@ -83,7 +84,7 @@
 
       .title {
         cursor: pointer;
-        display: inline-block;
+        display: block;
         color: #000;
         margin-top: 15px;
       }
@@ -92,7 +93,7 @@
         cursor: pointer;
         display: inline-block;
         color: #a0a0a0;
-        margin-top: 10px;
+        margin-top: 3px;
       }
     }
   }

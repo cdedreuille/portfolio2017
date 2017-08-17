@@ -7,6 +7,8 @@ import louboutinspikes5 from './images/louboutinspikes5.jpg';
 import louboutinspikes6 from './images/louboutinspikes6.jpg';
 import louboutinspikes7 from './images/louboutinspikes7.jpg';
 import louboutinspikes8 from './images/louboutinspikes8.jpg';
+import louboutinspikes9 from './images/louboutinspikes9.png';
+import louboutinspikes10 from './images/louboutinspikes10.png';
 import './LouboutinSpikes.css';
 
 class LouboutinSpikes extends Component {
@@ -38,10 +40,10 @@ class LouboutinSpikes extends Component {
             SOS In Bel-Air - Production</p>
           </div>
         </div>
-        <video className='vidMargin videoRight' width="70%" autoPlay loop>
+        <video className='vidMargin videoRight' width="70%" controls poster={louboutinspikes9}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Red+Spikes+1.mp4" type="video/mp4" />
         </video>
-        <video className='vidMargin' width="70%" autoPlay loop>
+        <video className='vidMargin' width="70%" controls poster={louboutinspikes10}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Spikes+Gold+on+Black+4.mp4" type="video/mp4" />
         </video>
         <h2>Photos of the shoot with SOS in Bel-Air</h2>

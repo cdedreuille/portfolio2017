@@ -4,6 +4,7 @@ import christianlouboutin1 from './images/christianlouboutin1.jpg';
 import christianlouboutin2 from './images/christianlouboutin2.jpg';
 import christianlouboutin3 from './images/christianlouboutin3.jpg';
 import christianlouboutin4 from './images/christianlouboutin4.jpg';
+import posterLogo from './images/poster-logo.jpg';
 import Arrow from '../arrow/Arrow';
 import './ChristianLouboutin.css';
 
@@ -44,7 +45,7 @@ class ChristianLouboutin extends Component {
             </video>
           </MediaQuery>
           <MediaQuery query='(max-width: 800px)'>
-            <video width="200">
+            <video width="200" controls poster={posterLogo}>
               <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-logo.mp4" type="video/mp4" />
             </video>
           </MediaQuery>

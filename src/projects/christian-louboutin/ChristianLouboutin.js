@@ -5,6 +5,10 @@ import christianlouboutin2 from './images/christianlouboutin2.jpg';
 import christianlouboutin3 from './images/christianlouboutin3.jpg';
 import christianlouboutin4 from './images/christianlouboutin4.jpg';
 import posterLogo from './images/poster-logo.jpg';
+import posterBirds from './images/poster-birds.jpg';
+import posterFragrance from './images/poster-fragrance.jpg';
+import posterNails from './images/poster-nails.jpg';
+import posterGuideline from './images/poster-guideline.jpg';
 import Arrow from '../arrow/Arrow';
 import './ChristianLouboutin.css';
 
@@ -52,18 +56,18 @@ class ChristianLouboutin extends Component {
         </div>
         <img className='imgMargin' src={christianlouboutin2} alt='Christian Louboutin' />
         <h2>Restructure of the entire site<br />as mobile-first</h2>
-        <video className='vidMargin' width="100%" controls>
+        <video className='vidMargin' width="100%" controls poster={posterBirds}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Birds+3.mp4" type="video/mp4" />
         </video>
         <img className='imgMargin' src={christianlouboutin3} alt='Christian Louboutin' />
-        <video className='vidMargin' width="100%" controls>
+        <video className='vidMargin' width="100%" controls poster={posterNails}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Nails+1.mp4" type="video/mp4" />
         </video>
-        <video className='vidMargin' width="100%" controls>
+        <video className='vidMargin' width="100%" controls poster={posterFragrance}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Fragrance+3.mp4" type="video/mp4" />
         </video>
         <h2>Digital Guideline<br /><br />For the latest version of the website I merged our digital branding guideline as a modular tool to build all the different pieces of the site.</h2>
-        <video className='vidMargin' width="100%" controls>
+        <video className='vidMargin' width="100%" controls poster={posterGuideline}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-guideline-2.mp4" type="video/mp4" />
         </video>
         <h2>Monthly homepages</h2>

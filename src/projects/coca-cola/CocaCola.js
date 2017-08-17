@@ -4,7 +4,6 @@ import cocacola2 from './images/cocacola2.jpg';
 import cocacola3 from './images/cocacola3.jpg';
 import cocacola4 from './images/cocacola4.jpg';
 import cocacola5 from './images/cocacola5.jpg';
-import cocacola6 from './images/cocacola6.jpg';
 import './CocaCola.css';
 
 class CocaCola extends Component {
@@ -38,9 +37,9 @@ class CocaCola extends Component {
         <img className='imgMargin' src={cocacola2} alt='Charles de Dreuille' />
         <img className='imgMargin' src={cocacola3} alt='Charles de Dreuille' />
         <h2>Storytelling on Apple TV + Apple Watch</h2>
-        <img className='imgMargin' src={cocacola5} alt='Charles de Dreuille' />
+        <img className='imgMargin' src={cocacola4} alt='Charles de Dreuille' />
         <h2>Share the Love using your heartbeat<br />See it LIVE on smart TVs & Journey’s Website</h2>
-        <img className='imgMargin' src={cocacola6} alt='Charles de Dreuille' />
+        <img className='imgMargin' src={cocacola5} alt='Charles de Dreuille' />
         <div className='shapes'>
           <div className='column'>
             <span>Step 1</span>

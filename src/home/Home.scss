@@ -2,6 +2,11 @@
   margin: 80px 0 0 80px;
   width: calc(100% - 160px);
 
+  @media screen and (max-width: 800px) {
+    margin: 30px 0 0 30px;
+    width: calc(100% - 60px);
+  }
+
   .portrait {
     position: relative;
 
@@ -9,6 +14,12 @@
       position: absolute;
       top: 20%;
       left: 8%;
+
+      @media screen and (max-width: 800px) {
+        position: static;
+        margin-top: 160px;
+        margin-bottom: 30px;
+      }
 
       span {
         &:nth-child(1) {
@@ -18,7 +29,7 @@
 
         &:nth-child(2) {
           display: block;
-          width: 360px;
+          max-width: 360px;
           line-height: 30px;
         }
       }
@@ -26,6 +37,22 @@
 
     img {
       width: 100%;
+
+      &.portrait-desktop {
+        display: block;
+
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+
+      &.portrait-mobile {
+        display: none;
+
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+      }
     }
   }
 
@@ -34,12 +61,20 @@
     padding: 0;
     column-gap: 6em;
 
+    @media screen and (max-width: 800px) {
+      margin-top: 60px;
+    }
+
     .item {
       display: inline-block;
       margin: 0 0 6em;
       width: 100%;
       box-sizing: border-box;
       cursor: default;
+
+      @media screen and (max-width: 800px) {
+        margin-bottom: 60px;
+      }
 
       img {
         width: 100%;

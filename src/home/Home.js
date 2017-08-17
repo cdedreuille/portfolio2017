@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import portrait from './images/portrait.jpg';
+import portraitMobile from './images/portrait-mobile.jpg';
 import thumbnail1 from './images/thumbnail1.jpg';
 import thumbnail2 from './images/thumbnail2.jpg';
 import thumbnail3 from './images/thumbnail3.jpg';
@@ -26,7 +27,8 @@ class Home extends Component {
             & Front-End Developer based in London.<br />
             I specialize in interactive and human-centered experiences for clients and agencies worldwide.</span>
           </div>
-          <img src={portrait} alt='Charles de Dreuille' />
+          <img className='portrait-desktop' src={portrait} alt='Charles de Dreuille' />
+          <img className='portrait-mobile' src={portraitMobile} alt='Charles de Dreuille' />
         </div>
         <div className="masonry">
           <Link className="item" to='/christian-louboutin'>

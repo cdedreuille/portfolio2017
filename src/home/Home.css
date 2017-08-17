@@ -1,31 +1,56 @@
 .Home {
   margin: 80px 0 0 80px;
   width: calc(100% - 160px); }
+  @media screen and (max-width: 800px) {
+    .Home {
+      margin: 30px 0 0 30px;
+      width: calc(100% - 60px); } }
   .Home .portrait {
     position: relative; }
     .Home .portrait .intro {
       position: absolute;
       top: 20%;
       left: 8%; }
+      @media screen and (max-width: 800px) {
+        .Home .portrait .intro {
+          position: static;
+          margin-top: 160px;
+          margin-bottom: 30px; } }
       .Home .portrait .intro span:nth-child(1) {
         display: block;
         margin-bottom: 60px; }
       .Home .portrait .intro span:nth-child(2) {
         display: block;
-        width: 360px;
+        max-width: 360px;
         line-height: 30px; }
     .Home .portrait img {
       width: 100%; }
+      .Home .portrait img.portrait-desktop {
+        display: block; }
+        @media screen and (max-width: 800px) {
+          .Home .portrait img.portrait-desktop {
+            display: none; } }
+      .Home .portrait img.portrait-mobile {
+        display: none; }
+        @media screen and (max-width: 800px) {
+          .Home .portrait img.portrait-mobile {
+            display: block; } }
   .Home .masonry {
     margin: 6em 0;
     padding: 0;
     column-gap: 6em; }
+    @media screen and (max-width: 800px) {
+      .Home .masonry {
+        margin-top: 60px; } }
     .Home .masonry .item {
       display: inline-block;
       margin: 0 0 6em;
       width: 100%;
       box-sizing: border-box;
       cursor: default; }
+      @media screen and (max-width: 800px) {
+        .Home .masonry .item {
+          margin-bottom: 60px; } }
       .Home .masonry .item img {
         width: 100%;
         cursor: pointer; }

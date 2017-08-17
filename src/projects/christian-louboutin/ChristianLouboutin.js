@@ -43,18 +43,18 @@ class ChristianLouboutin extends Component {
         </div>
         <img className='imgMargin' src={christianlouboutin2} alt='Christian Louboutin' />
         <h2>Restructure of the entire site<br />as mobile-first</h2>
-        <video className='vidMargin' width="100%" controls controlsList="nodownload">
+        <video className='vidMargin' width="100%" controls>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Birds+3.mp4" type="video/mp4" />
         </video>
         <img className='imgMargin' src={christianlouboutin3} alt='Christian Louboutin' />
-        <video className='vidMargin' width="100%" controls controlsList="nodownload">
+        <video className='vidMargin' width="100%" controls>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Nails+1.mp4" type="video/mp4" />
         </video>
-        <video className='vidMargin' width="100%" controls controlsList="nodownload">
+        <video className='vidMargin' width="100%" controls>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Fragrance+3.mp4" type="video/mp4" />
         </video>
         <h2>Digital Guideline<br /><br />For the latest version of the website I merged our digital branding guideline as a modular tool to build all the different pieces of the site.</h2>
-        <video className='vidMargin' width="100%" controls controlsList="nodownload">
+        <video className='vidMargin' width="100%" controls>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-guideline-2.mp4" type="video/mp4" />
         </video>
         <h2>Monthly homepages</h2>

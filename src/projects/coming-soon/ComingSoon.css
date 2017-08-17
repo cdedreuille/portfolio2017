@@ -1,3 +1,7 @@
 .ComingSoon {
   margin: 0 80px 180px 80px;
   width: calc(100% - 160px); }
+  @media screen and (max-width: 800px) {
+    .ComingSoon {
+      margin: 0 30px 180px 30px;
+      width: calc(100% - 60px); } }

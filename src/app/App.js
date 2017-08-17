@@ -11,6 +11,7 @@ import Floom from '../projects/floom/Floom';
 import ComingSoon from '../projects/coming-soon/ComingSoon';
 
 class App extends Component {
+
   render() {
     return (
       <Router>

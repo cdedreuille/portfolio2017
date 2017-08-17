@@ -16,7 +16,56 @@ import thumbnail11 from './images/thumbnail11.jpg';
 import thumbnail12 from './images/thumbnail12.jpg';
 import './Home.css';
 
+var items, bodyRect;
+
+function init(){
+    items = document.querySelectorAll('.item');
+    bodyRect = document.body.getBoundingClientRect();
+
+    for(var i = 0; i < items.length; i++){
+        var coords = items[i].getBoundingClientRect();
+        items[i].calcY   = coords.top - bodyRect.top + 80;
+        items[i].calcH   = coords.height;
+        items[i].style.opacity = 0;
+        items[i].style.transition = 'all 650ms ease-out';
+        //apply default style: faded out
+    }
+}
+
+function reveal(){
+    requestAnimationFrame(reveal);
+    var count = 0;
+    for(var i = 0; i < items.length; i++){
+        var item = items[i];
+
+        var top = item.calcY;
+        var bottom = item.calcY + item.calcH;
+
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var viewTop = scrollTop;
+        var viewBottom = viewTop + window.innerHeight;
+
+        if( !item.reveal && (top <= viewBottom) && (bottom >= viewTop) ){
+
+            item.reveal = true;
+            items[i].style.opacity = 1;
+            items[i].style.transform = 'translateY(-15px)';
+
+        }else if(item.reveal && (top > viewBottom)){
+            items[i].style.opacity = 0;
+            item.reveal = false;
+            items[i].style.transform = 'translateY(0)';
+        }
+    }
+}
+
 class Home extends Component {
+
+  componentDidMount() {
+    init();
+    reveal();
+  }
+  
   render() {
     return (
       <div className="Home">

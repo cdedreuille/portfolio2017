@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 import institut1 from './images/institut1.jpg';
 import institut2 from './images/institut2.jpg';
 import institut3 from './images/institut3.jpg';
@@ -40,9 +41,16 @@ class Institut extends Component {
             Project part of La Moulade</p>
           </div>
         </div>
-        <video className='vidMargin' width="100%" autoPlay loop>
-          <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-2.mp4" type="video/mp4" />
-        </video>
+        <MediaQuery query='(min-width: 800px)'>
+          <video className='vidMargin' width="100%" autoPlay loop>
+            <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-2.mp4" type="video/mp4" />
+          </video>
+        </MediaQuery>
+        <MediaQuery query='(max-width: 800px)'>
+          <video className='vidMargin' width="100%">
+            <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-2.mp4" type="video/mp4" />
+          </video>
+        </MediaQuery>
         <img className='imgMargin' src={institut2} alt='Charles de Dreuille' />
         <div className='shapes'>
           <div className='column'>
@@ -58,9 +66,16 @@ class Institut extends Component {
             <p>The entity is always looking to perfect itself, learning and discovering everytime.</p>
           </div>
         </div>
-        <video className='vidMargin' width="100%" autoPlay loop>
-          <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-3.mp4" type="video/mp4" />
-        </video>
+        <MediaQuery query='(min-width: 800px)'>
+          <video className='vidMargin' width="100%" autoPlay loop>
+            <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-3.mp4" type="video/mp4" />
+          </video>
+        </MediaQuery>
+        <MediaQuery query='(max-width: 800px)'>
+          <video className='vidMargin' width="100%">
+            <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-3.mp4" type="video/mp4" />
+          </video>
+        </MediaQuery>
         <img className='collection' src={institut3} alt='Charles de Dreuille' />
         <img className='imgMargin' src={institut4} alt='Charles de Dreuille' />
         <div className='imgMarginLeft'>

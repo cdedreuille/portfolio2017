@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 import christianlouboutin1 from './images/christianlouboutin1.jpg';
 import christianlouboutin2 from './images/christianlouboutin2.jpg';
 import christianlouboutin3 from './images/christianlouboutin3.jpg';
@@ -37,9 +38,16 @@ class ChristianLouboutin extends Component {
           </div>
         </div>
         <div className='logo'>
-          <video width="200" autoPlay loop>
-            <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-logo.mp4" type="video/mp4" />
-          </video>
+          <MediaQuery query='(min-width: 800px)'>
+            <video width="200" autoPlay loop>
+              <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-logo.mp4" type="video/mp4" />
+            </video>
+          </MediaQuery>
+          <MediaQuery query='(max-width: 800px)'>
+            <video width="200">
+              <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-logo.mp4" type="video/mp4" />
+            </video>
+          </MediaQuery>
         </div>
         <img className='imgMargin' src={christianlouboutin2} alt='Christian Louboutin' />
         <h2>Restructure of the entire site<br />as mobile-first</h2>

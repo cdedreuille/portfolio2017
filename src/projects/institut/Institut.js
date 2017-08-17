@@ -7,6 +7,7 @@ import institut5 from './images/institut5.jpg';
 import institut6 from './images/institut6.jpg';
 import institut7 from './images/institut7.jpg';
 import institut8 from './images/institut8.jpg';
+import Arrow from '../arrow/Arrow';
 import './Institut.css';
 
 class Institut extends Component {
@@ -18,6 +19,7 @@ class Institut extends Component {
   render() {
     return (
       <div className="Institut">
+        <Arrow />
         <img src={institut1} alt='Charles de Dreuille' />
         <div className='infos'>
           <div className='column1'>

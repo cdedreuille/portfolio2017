@@ -9,6 +9,7 @@ import louboutinspikes7 from './images/louboutinspikes7.jpg';
 import louboutinspikes8 from './images/louboutinspikes8.jpg';
 import louboutinspikes9 from './images/louboutinspikes9.png';
 import louboutinspikes10 from './images/louboutinspikes10.png';
+import Arrow from '../arrow/Arrow';
 import './LouboutinSpikes.css';
 
 class LouboutinSpikes extends Component {
@@ -20,6 +21,7 @@ class LouboutinSpikes extends Component {
   render() {
     return (
       <div className="LouboutinSpikes">
+        <Arrow />
         <img src={louboutinspikes1} alt='Charles de Dreuille' />
         <div className='infos'>
           <div className='column1'>

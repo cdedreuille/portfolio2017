@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import floom1 from './images/floom1.jpg';
-
+import Arrow from '../arrow/Arrow';
 import './Floom.css';
 
 class Floom extends Component {
@@ -12,6 +12,7 @@ class Floom extends Component {
   render() {
     return (
       <div className="Floom">
+        <Arrow />
         <img src={floom1} alt='Charles de Dreuille' />
         <div className='infos'>
           <div className='column1'>

@@ -4,6 +4,7 @@ import cocacola2 from './images/cocacola2.jpg';
 import cocacola3 from './images/cocacola3.jpg';
 import cocacola4 from './images/cocacola4.jpg';
 import cocacola5 from './images/cocacola5.jpg';
+import Arrow from '../arrow/Arrow';
 import './CocaCola.css';
 
 class CocaCola extends Component {
@@ -15,6 +16,7 @@ class CocaCola extends Component {
   render() {
     return (
       <div className="CocaCola">
+        <Arrow />
         <img src={cocacola1} alt='Charles de Dreuille' />
         <div className='infos'>
           <div className='column1'>

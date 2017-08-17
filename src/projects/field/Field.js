@@ -3,7 +3,7 @@ import field1 from './images/field1.jpg';
 import field2 from './images/field2.jpg';
 import field3 from './images/field3.jpg';
 import field4 from './images/field4.jpg';
-
+import Arrow from '../arrow/Arrow';
 import './Field.css';
 
 class Field extends Component {
@@ -15,6 +15,7 @@ class Field extends Component {
   render() {
     return (
       <div className="Field">
+        <Arrow />
         <img src={field1} alt='Charles de Dreuille' />
         <div className='infos'>
           <div className='column1'>

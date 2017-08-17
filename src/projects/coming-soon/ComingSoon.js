@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Arrow from '../arrow/Arrow';
 import './ComingSoon.css';
 
 class ComingSoon extends Component {
@@ -10,6 +11,7 @@ class ComingSoon extends Component {
   render() {
     return (
       <div className="ComingSoon">
+        <Arrow />
         Coming soon.
       </div>
     );

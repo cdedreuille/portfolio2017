@@ -1,0 +1,9 @@
+.Arrow {
+  height: 80px;
+  width: 80px;
+  display: block;
+  transition: all 0.2s ease; }
+  .Arrow:hover {
+    transform: translateX(-10px); }
+  .Arrow svg {
+    margin-top: 33px; }

@@ -3,6 +3,7 @@ import christianlouboutin1 from './images/christianlouboutin1.jpg';
 import christianlouboutin2 from './images/christianlouboutin2.jpg';
 import christianlouboutin3 from './images/christianlouboutin3.jpg';
 import christianlouboutin4 from './images/christianlouboutin4.jpg';
+import Arrow from '../arrow/Arrow';
 import './ChristianLouboutin.css';
 
 class ChristianLouboutin extends Component {
@@ -14,6 +15,7 @@ class ChristianLouboutin extends Component {
   render() {
     return (
       <div className="ChristianLouboutin">
+        <Arrow />
         <img src={christianlouboutin1} alt='Christian Louboutin' />
         <div className='infos'>
           <div className='column1'>

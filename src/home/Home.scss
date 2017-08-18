@@ -60,10 +60,22 @@
   .masonry {
     margin: 6em 0;
     padding: 0;
-    column-gap: 6em;
 
     @media screen and (max-width: 800px) {
       margin-top: 60px;
+    }
+
+    .column1 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 40px);
+      margin-right: 80px;
+    }
+
+    .column2 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 40px);
     }
 
     .item {
@@ -106,18 +118,6 @@
         color: #a0a0a0;
         margin-top: 3px;
       }
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    .masonry {
-      column-count: 1;
-    }
-  }
-
-  @media only screen and (min-width: 400px) {
-    .masonry {
-      column-count: 2;
     }
   }
 }

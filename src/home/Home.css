@@ -38,11 +38,19 @@
             display: block; } }
   .Home .masonry {
     margin: 6em 0;
-    padding: 0;
-    column-gap: 6em; }
+    padding: 0; }
     @media screen and (max-width: 800px) {
       .Home .masonry {
         margin-top: 60px; } }
+    .Home .masonry .column1 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 40px);
+      margin-right: 80px; }
+    .Home .masonry .column2 {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 40px); }
     .Home .masonry .item {
       display: inline-block;
       margin: 0 0 6em;
@@ -74,9 +82,3 @@
         display: inline-block;
         color: #a0a0a0;
         margin-top: 3px; }
-  @media only screen and (max-width: 400px) {
-    .Home .masonry {
-      column-count: 1; } }
-  @media only screen and (min-width: 400px) {
-    .Home .masonry {
-      column-count: 2; } }

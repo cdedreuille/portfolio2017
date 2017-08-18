@@ -109,76 +109,80 @@ class Home extends Component {
 
           {/* List of items on Desktop */}
           <MediaQuery query='(min-width: 800px)'>
-            <Link className="item" to='/christian-louboutin'>
-              <img src={thumbnail1} alt='Project' />
-              <div className='title'>Christian Louboutin</div>
-              <div className='tags'>Digital Branding, Global Experience</div>
-            </Link>
-            <a className="item" href='https://getkapture.com' target="_blank" rel="noopener noreferrer">
-              <img src={thumbnail3} alt='Project' />
-              <div className='title'>Kapture</div>
-              <div className='tags'>Experiment, Visual Boomarking</div>
-            </a>
-            <Link className="item" to='/field'>
-              <img src={thumbnail5} alt='Project' />
-              <div className='title'>Field.io</div>
-              <div className='tags'>Website, Interactive</div>
-            </Link>
-            <Link className="item" to='/couturelab'>
-              <img src={thumbnail7} alt='Project' />
-              <div className='title'>CoutureLab</div>
-              <div className='tags'>Website, E-Commerce</div>
-            </Link>
-            <Link className="item" to='/sporty-henri'>
-              <img src={thumbnail9} alt='Project' />
-              <div className='title'>Sporty Henri</div>
-              <div className='tags'>Branding, E-Commerce</div>
-            </Link>
-            <Link className="item" to='/harbour'>
-              <img src={thumbnail11} alt='Project' />
-              <div className='title'>Harbour Litigation Funding</div>
-              <div className='tags'>Branding, Website</div>
-            </Link>
-            <Link className="item" to='/edclub'>
-              <img src={thumbnail13} alt='Project' />
-              <div className='title'>EdClub</div>
-              <div className='tags'>Web App, Animations, Education</div>
-            </Link>
-            <Link className="item" to='/institut'>
-              <img src={thumbnail2} alt='Project' />
-              <div className='title'>Institut des Mutations</div>
-              <div className='tags'>Generative Identity</div>
-            </Link>
-            <Link className="item" to='/coca-cola'>
-              <img src={thumbnail4} alt='Project' />
-              <div className='title'>Coca-Cola Journey</div>
-              <div className='tags'>Concept</div>
-            </Link>
-            <Link className="item" to='/louboutin-spikes'>
-              <img src={thumbnail6} alt='Project' />
-              <div className='title'>Christian Louboutin</div>
-              <div className='tags'>Video, Leather Goods</div>
-            </Link>
-            <a className="item" href='https://lasurprise.io' target="_blank" rel="noopener noreferrer">
-              <img src={thumbnail8} alt='Project' />
-              <div className='title'>La Surprise.io</div>
-              <div className='tags'>Experiment, Chatbot</div>
-            </a>
-            <Link className="item" to='/floom'>
-              <img src={thumbnail10} alt='Project' />
-              <div className='title'>Floom</div>
-              <div className='tags'>Website, Marketplace</div>
-            </Link>
-            <Link className="item" to='/orogo'>
-              <img src={thumbnail12} alt='Project' />
-              <div className='title'>Orogo</div>
-              <div className='tags'>App, Food Delivery</div>
-            </Link>
-            <a className="item" href='https://juun.io' target="_blank" rel="noopener noreferrer">
-              <img src={thumbnail14} alt='Project' />
-              <div className='title'>Juun Project Planner</div>
-              <div className='tags'>Experiment, Project Planning</div>
-            </a>
+            <div className='column1'>
+              <Link className="item" to='/christian-louboutin'>
+                <img src={thumbnail1} alt='Project' />
+                <div className='title'>Christian Louboutin</div>
+                <div className='tags'>Digital Branding, Global Experience</div>
+              </Link>
+              <a className="item" href='https://getkapture.com' target="_blank" rel="noopener noreferrer">
+                <img src={thumbnail3} alt='Project' />
+                <div className='title'>Kapture</div>
+                <div className='tags'>Experiment, Visual Boomarking</div>
+              </a>
+              <Link className="item" to='/field'>
+                <img src={thumbnail5} alt='Project' />
+                <div className='title'>Field.io</div>
+                <div className='tags'>Website, Interactive</div>
+              </Link>
+              <Link className="item" to='/couturelab'>
+                <img src={thumbnail7} alt='Project' />
+                <div className='title'>CoutureLab</div>
+                <div className='tags'>Website, E-Commerce</div>
+              </Link>
+              <Link className="item" to='/sporty-henri'>
+                <img src={thumbnail9} alt='Project' />
+                <div className='title'>Sporty Henri</div>
+                <div className='tags'>Branding, E-Commerce</div>
+              </Link>
+              <Link className="item" to='/harbour'>
+                <img src={thumbnail11} alt='Project' />
+                <div className='title'>Harbour Litigation Funding</div>
+                <div className='tags'>Branding, Website</div>
+              </Link>
+              <Link className="item" to='/edclub'>
+                <img src={thumbnail13} alt='Project' />
+                <div className='title'>EdClub</div>
+                <div className='tags'>Web App, Animations, Education</div>
+              </Link>
+            </div>
+            <div className='column2'>
+              <Link className="item" to='/institut'>
+                <img src={thumbnail2} alt='Project' />
+                <div className='title'>Institut des Mutations</div>
+                <div className='tags'>Generative Identity</div>
+              </Link>
+              <Link className="item" to='/coca-cola'>
+                <img src={thumbnail4} alt='Project' />
+                <div className='title'>Coca-Cola Journey</div>
+                <div className='tags'>Concept</div>
+              </Link>
+              <Link className="item" to='/louboutin-spikes'>
+                <img src={thumbnail6} alt='Project' />
+                <div className='title'>Christian Louboutin</div>
+                <div className='tags'>Video, Leather Goods</div>
+              </Link>
+              <a className="item" href='https://lasurprise.io' target="_blank" rel="noopener noreferrer">
+                <img src={thumbnail8} alt='Project' />
+                <div className='title'>La Surprise.io</div>
+                <div className='tags'>Experiment, Chatbot</div>
+              </a>
+              <Link className="item" to='/floom'>
+                <img src={thumbnail10} alt='Project' />
+                <div className='title'>Floom</div>
+                <div className='tags'>Website, Marketplace</div>
+              </Link>
+              <Link className="item" to='/orogo'>
+                <img src={thumbnail12} alt='Project' />
+                <div className='title'>Orogo</div>
+                <div className='tags'>App, Food Delivery</div>
+              </Link>
+              <a className="item" href='https://juun.io' target="_blank" rel="noopener noreferrer">
+                <img src={thumbnail14} alt='Project' />
+                <div className='title'>Juun Project Planner</div>
+                <div className='tags'>Experiment, Project Planning</div>
+              </a>
+            </div>
           </MediaQuery>
 
           {/* List of items on Mobile */}

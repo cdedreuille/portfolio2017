@@ -59,7 +59,6 @@ class Home extends Component {
           items[i].calcH   = coords.height;
       }
 
-
       this.revealAnimation();
   }
 

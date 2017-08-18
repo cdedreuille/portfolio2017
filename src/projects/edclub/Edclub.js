@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import edclub1 from './images/edclub1.jpg';
 import edclub2 from './images/edclub2.png';
 import edclub3 from './images/edclub3.png';
@@ -7,12 +8,8 @@ import edclub5 from './images/edclub5.png';
 import Arrow from '../arrow/Arrow';
 import './Edclub.css';
 
-class Edclub extends Component {
+class Edclub extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="Edclub">

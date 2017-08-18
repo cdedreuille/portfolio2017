@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import floom1 from './images/floom1.jpg';
 import floom2 from './images/floom2.jpg';
 import floom3 from './images/floom3.jpg';
@@ -6,12 +7,8 @@ import floom4 from './images/floom4.jpg';
 import Arrow from '../arrow/Arrow';
 import './Floom.css';
 
-class Floom extends Component {
+class Floom extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="Floom">

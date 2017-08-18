@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import louboutinspikes1 from './images/louboutinspikes1.jpg';
 import louboutinspikes2 from './images/louboutinspikes2.jpg';
 import louboutinspikes3 from './images/louboutinspikes3.jpg';
@@ -12,12 +13,8 @@ import louboutinspikes10 from './images/louboutinspikes10.png';
 import Arrow from '../arrow/Arrow';
 import './LouboutinSpikes.css';
 
-class LouboutinSpikes extends Component {
+class LouboutinSpikes extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="LouboutinSpikes">

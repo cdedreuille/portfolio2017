@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import sportyhenri1 from './images/sportyhenri1.jpg';
 import sportyhenri2 from './images/sportyhenri2.jpg';
 import sportyhenri3 from './images/sportyhenri3.png';
@@ -6,12 +7,8 @@ import sportyhenri4 from './images/sportyhenri4.jpg';
 import Arrow from '../arrow/Arrow';
 import './SportyHenri.css';
 
-class SportyHenri extends Component {
+class SportyHenri extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="SportyHenri">

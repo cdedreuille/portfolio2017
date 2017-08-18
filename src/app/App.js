@@ -10,6 +10,7 @@ import Field from '../projects/field/Field';
 import Floom from '../projects/floom/Floom';
 import Couturelab from '../projects/couturelab/Couturelab';
 import Orogo from '../projects/orogo/Orogo';
+import SportyHenri from '../projects/sporty-henri/SportyHenri';
 import ComingSoon from '../projects/coming-soon/ComingSoon';
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
           <Route path="/louboutin-spikes" component={LouboutinSpikes}/>
           <Route path="/field" component={Field}/>
           <Route path="/floom" component={Floom}/>
-          <Route path="/sporty-henri" component={ComingSoon}/>
+          <Route path="/sporty-henri" component={SportyHenri}/>
           <Route path="/harbour" component={ComingSoon}/>
           <Route path="/edclub" component={ComingSoon}/>
           <Route path="/couturelab" component={Couturelab}/>

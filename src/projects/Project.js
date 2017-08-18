@@ -21,7 +21,6 @@ class Project extends Component {
   }
 
   componentWillUnmount() {
-    console.log('unmount')
     window.removeEventListener('scroll', this.handleVideos, true);
   }
 
@@ -42,18 +41,16 @@ class Project extends Component {
   }
 
   handleVideos() {
-    console.log('LISTENING');
-    // console.log(this.videos.length)
       for(var i = 0; i < this.videos.length; i++){
           var item = this.videos[i];
           var top = item.calcY; // top of our element
           var bottom = item.calcY + item.calcH; // bottom of our element
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // scroll position
           var viewTop = scrollTop; // viewport top
-          var viewBottom = viewTop + window.innerHeight + 50; // viewport bottom / we start the video 50px before it comes in
+          var viewBottom = viewTop + window.innerHeight; // viewport bottom / we start the video 50px before it comes in
 
           //is our element in view?
-          if( (top <= viewBottom) && (bottom >= viewTop) ){
+          if( (top <= (viewBottom + 50)) && (bottom >= viewTop) ){
             if(item.paused){
               item.play();
             }
@@ -61,7 +58,6 @@ class Project extends Component {
               item.pause();
           }
       }
-    // });
   }
 }
 

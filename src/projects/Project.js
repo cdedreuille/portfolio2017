@@ -4,6 +4,8 @@ class Project extends Component {
     constructor() {
         super();
         this.videos = [];
+        this.initVideos = this.initVideos.bind(this);
+        this.handleVideos = this.handleVideos.bind(this);
     }
 
   componentDidMount() {
@@ -13,12 +15,13 @@ class Project extends Component {
         this.initVideos();
 
         if(this.videos.length){
-            window.addEventListener('scroll', this.handleVideos.bind(this), true);
+            window.addEventListener('scroll', this.handleVideos, true);
         }
     }.bind(this), 300);
   }
 
   componentWillUnmount() {
+    console.log('unmount')
     window.removeEventListener('scroll', this.handleVideos, true);
   }
 
@@ -39,6 +42,7 @@ class Project extends Component {
   }
 
   handleVideos() {
+    console.log('LISTENING');
     // console.log(this.videos.length)
       for(var i = 0; i < this.videos.length; i++){
           var item = this.videos[i];

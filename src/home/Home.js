@@ -23,6 +23,12 @@ import './Home.css';
 var items, bodyRect, debounceTimer;
 
 class Home extends Component {
+  constructor() {
+      super();
+
+      this.initAnimation = this.initAnimation.bind(this);
+      this.revealAnimation = this.revealAnimation.bind(this);
+  }
 
   componentDidMount() {
     //scroll top
@@ -35,7 +41,7 @@ class Home extends Component {
       window.addEventListener('scroll', this.revealAnimation, true);
     }.bind(this), 300);
 
-    window.addEventListener('resize', this.initAnimation.bind(this), true);
+    window.addEventListener('resize', this.initAnimation, true);
   }
 
   componentWillUnmount() {
@@ -63,12 +69,6 @@ class Home extends Component {
   }
 
   revealAnimation() {
-    // if(debounceTimer) {
-    //   clearTimeout(debounceTimer);
-    // }
-
-    // debounceTimer = setTimeout(function() {
-      //looping all our elements
       for(var i = 0; i < items.length; i++){
           var item = items[i];
           var top = item.calcY; // top of our element
@@ -88,7 +88,7 @@ class Home extends Component {
               items[i].classList.remove('reveal');
           }
       }
-    // });
+
   }
 
   render() {

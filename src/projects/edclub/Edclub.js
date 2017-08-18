@@ -21,7 +21,7 @@ class Edclub extends Component {
         <div className='infos'>
           <div className='column1'>
             <span>Brief</span>
-            <p>Floom is a marketplace for local florist. I was in charge of the platofrm design.</p>
+            <p>Edclub is an education company based in Washington DC. They asked to create animated experiences on the web to learn how to use a keyboard.</p>
           </div>
           <div className='column2'>
             <span>Client</span>

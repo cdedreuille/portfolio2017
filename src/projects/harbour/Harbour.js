@@ -23,7 +23,7 @@ class Harbour extends Component {
         <div className='infos'>
           <div className='column1'>
             <span>Brief</span>
-            <p>Floom is a marketplace for local florist. I was in charge of the platofrm design.</p>
+            <p>Harbour Litigation Funding asked us to revisit their brand. We built their identity as well as their entire digital platform.</p>
           </div>
           <div className='column2'>
             <span>Client</span>

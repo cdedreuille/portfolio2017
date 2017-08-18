@@ -20,7 +20,7 @@ class SportyHenri extends Component {
         <div className='infos'>
           <div className='column1'>
             <span>Brief</span>
-            <p>I built the entire new design for Orogo just before they got acquired by Just-Eat.</p>
+            <p>Christian Louboutin asked us to work on the digital platform for their new marketplace dedicated to high-end sportswear.</p>
           </div>
           <div className='column2'>
             <span>Client</span>

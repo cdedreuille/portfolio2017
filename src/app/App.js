@@ -8,6 +8,7 @@ import CocaCola from '../projects/coca-cola/CocaCola';
 import LouboutinSpikes from '../projects/louboutin-spikes/LouboutinSpikes';
 import Field from '../projects/field/Field';
 import Floom from '../projects/floom/Floom';
+import Couturelab from '../projects/couturelab/Couturelab';
 import ComingSoon from '../projects/coming-soon/ComingSoon';
 
 class App extends Component {
@@ -26,6 +27,8 @@ class App extends Component {
           <Route path="/sporty-henri" component={ComingSoon}/>
           <Route path="/harbour" component={ComingSoon}/>
           <Route path="/edclub" component={ComingSoon}/>
+          <Route path="/couturelab" component={Couturelab}/>
+          <Route path="/orogo" component={ComingSoon}/>
         </div>
       </Router>
     );

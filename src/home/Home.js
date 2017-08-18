@@ -64,11 +64,11 @@ class Home extends Component {
   }
 
   revealAnimation() {
-    if(debounceTimer) {
-      clearTimeout(debounceTimer);
-    }
+    // if(debounceTimer) {
+    //   clearTimeout(debounceTimer);
+    // }
 
-    debounceTimer = setTimeout(function() {
+    // debounceTimer = setTimeout(function() {
       //looping all our elements
       for(var i = 0; i < items.length; i++){
           var item = items[i];
@@ -89,7 +89,7 @@ class Home extends Component {
               items[i].classList.remove('reveal');
           }
       }
-    }, 30);
+    // });
   }
 
   render() {

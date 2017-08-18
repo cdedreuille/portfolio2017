@@ -76,7 +76,7 @@ class Home extends Component {
           var bottom = item.calcY + item.calcH; // bottom of our element
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // scroll position
           var viewTop = scrollTop; // viewport top
-          var viewBottom = viewTop + window.innerHeight - 100; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
+          var viewBottom = viewTop + window.innerHeight - 40; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
 
           //is our element in view?
           if( !item.reveal && (top <= viewBottom) && (bottom >= viewTop) ){
@@ -89,7 +89,7 @@ class Home extends Component {
               items[i].classList.remove('reveal');
           }
       }
-    }, 100);
+    }, 30);
   }
 
   render() {

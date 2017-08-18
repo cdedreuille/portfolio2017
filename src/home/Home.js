@@ -33,10 +33,9 @@ class Home extends Component {
       this.initAnimation();
       //listen for scroll
       window.addEventListener('scroll', this.revealAnimation, true);
-      this.revealAnimation();
     }.bind(this), 300);
 
-    window.addEventListener('resize', this.initAnimation, true);
+    window.addEventListener('resize', this.initAnimation.bind(this), true);
   }
 
   componentWillUnmount() {
@@ -58,12 +57,10 @@ class Home extends Component {
           items[i].reveal  = false;
           items[i].calcY   = coords.top - bodyRect.top;
           items[i].calcH   = coords.height;
-          //apply default style
-          items[i].style.opacity = 0;
-          items[i].style.transform = 'translateY(60px)';
-          items[i].style.filter = 'grayscale()';
-          items[i].style.transition = 'all 800ms ease-out';
       }
+
+
+      this.revealAnimation();
   }
 
   revealAnimation() {
@@ -72,7 +69,6 @@ class Home extends Component {
     }
 
     debounceTimer = setTimeout(function() {
-      console.log('ni?')
       //looping all our elements
       for(var i = 0; i < items.length; i++){
           var item = items[i];
@@ -86,15 +82,11 @@ class Home extends Component {
           if( !item.reveal && (top <= viewBottom) && (bottom >= viewTop) ){
             // reveal!
               item.reveal = true;
-              items[i].style.opacity = 1;
-              items[i].style.filter = 'grayscale(0)';
-              items[i].style.transform = 'translateY(0)';
+              items[i].classList.add('reveal');
 
           }else if(item.reveal && (top > viewBottom)){  // reset when we scroll up so we can replay the animation
-              items[i].style.opacity = 0;
               item.reveal = false;
-              items[i].style.transform = 'translateY(20px)';
-              items[i].style.filter = 'grayscale(1)';
+              items[i].classList.remove('reveal');
           }
       }
     }, 100);

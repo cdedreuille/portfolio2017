@@ -73,6 +73,16 @@
       box-sizing: border-box;
       cursor: default;
       text-decoration: none;
+      opacity: 0;
+      transform: translateY(60px);
+      filter: grayscale(1);
+
+      &.reveal{
+        opacity: 1;
+        transform: translateY(0);
+        filter: grayscale(0);
+        transition: all 800ms ease-out;
+      }
 
       @media screen and (max-width: 800px) {
         margin-bottom: 60px;

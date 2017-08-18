@@ -41,7 +41,7 @@ class ChristianLouboutin extends Project {
         </div>
         <div className='logo'>
           <MediaQuery query='(min-width: 800px)'>
-            <video width="200" autoPlay loop>
+            <video width="200" playsInline autoPlay loop>
               <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-logo.mp4" type="video/mp4" />
             </video>
           </MediaQuery>

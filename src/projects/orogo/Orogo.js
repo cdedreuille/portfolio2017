@@ -18,7 +18,7 @@ class Orogo extends Component {
         <div className='infos'>
           <div className='column1'>
             <span>Brief</span>
-            <p>I worked directly with Carmen Bousquets to develop the design of their new e-commerce platform.</p>
+            <p>I built the entire new design for Orogo just before they got acquired by Just-Eat.</p>
           </div>
           <div className='column2'>
             <span>Client</span>
@@ -26,7 +26,7 @@ class Orogo extends Component {
           </div>
           <div className='column3'>
             <span>Year</span>
-            <p>2013</p>
+            <p>2015</p>
           </div>
           <div className='column4'>
             <span>Credit</span>

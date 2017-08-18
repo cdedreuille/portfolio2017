@@ -49,11 +49,12 @@ class Project extends Component {
           var viewBottom = viewTop + window.innerHeight - 40; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
 
           //is our element in view?
-          if( item.paused && (top <= viewBottom) && (bottom >= viewTop) ){
+          if( (top <= viewBottom) && (bottom >= viewTop) ){
+            if(item.paused){
               item.play();
-
+            }
           }else if(!item.paused){  // reset when we scroll up so we can replay the animation
-              // item.pause();
+              item.pause();
           }
       }
     // });

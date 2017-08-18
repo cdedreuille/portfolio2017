@@ -39,10 +39,10 @@ class LouboutinSpikes extends Project {
             SOS In Bel-Air - Production</p>
           </div>
         </div>
-        <video className='vidMargin videoRight' width="70%" controls poster={louboutinspikes9}>
+        <video className='vidMargin videoRight' width="70%" loop playsInline poster={louboutinspikes9}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Red+Spikes+1.mp4" type="video/mp4" />
         </video>
-        <video className='vidMargin' width="70%" controls poster={louboutinspikes10}>
+        <video className='vidMargin' width="70%" loop playsInline poster={louboutinspikes10}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Spikes+Gold+on+Black+4.mp4" type="video/mp4" />
         </video>
         <h2>Photos of the shoot with SOS in Bel-Air</h2>

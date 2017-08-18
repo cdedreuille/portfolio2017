@@ -20,7 +20,7 @@ import thumbnail14 from './images/thumbnail14.jpg';
 import './Home.css';
 
 
-var raf, items, bodyRect;
+var items, bodyRect, debounceTimer;
 
 class Home extends Component {
 
@@ -32,19 +32,18 @@ class Home extends Component {
       //init animation
       this.initAnimation();
       //listen for scroll
+      window.addEventListener('scroll', this.revealAnimation, true);
       this.revealAnimation();
     }.bind(this), 300);
 
-    setInterval(function(){
-      this.revealAnimation();
-    }.bind(this), 2000)
     window.addEventListener('resize', this.initAnimation, true);
   }
 
   componentWillUnmount() {
     //cancel listen for scroll
-    cancelAnimationFrame(raf);
-    window.removeEventListener('resize', this.initAnimation);
+    clearTimeout(debounceTimer);
+    window.removeEventListener('resize', this.initAnimation, true);
+    window.removeEventListener('scroll', this.revealAnimation, true);
   }
 
   initAnimation() {
@@ -68,33 +67,37 @@ class Home extends Component {
   }
 
   revealAnimation() {
-    var self = this;
-    raf = requestAnimationFrame(function(){self.revealAnimation()});
-
-    //looping all our elements
-    for(var i = 0; i < items.length; i++){
-        var item = items[i];
-        var top = item.calcY; // top of our element
-        var bottom = item.calcY + item.calcH; // bottom of our element
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // scroll position
-        var viewTop = scrollTop; // viewport top
-        var viewBottom = viewTop + window.innerHeight - 100; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
-
-        //is our element in view?
-        if( !item.reveal && (top <= viewBottom) && (bottom >= viewTop) ){
-          // reveal!
-            item.reveal = true;
-            items[i].style.opacity = 1;
-            items[i].style.filter = 'grayscale(0)';
-            items[i].style.transform = 'translateY(0)';
-
-        }else if(item.reveal && (top > viewBottom)){  // reset when we scroll up so we can replay the animation
-            items[i].style.opacity = 0;
-            item.reveal = false;
-            items[i].style.transform = 'translateY(20px)';
-            items[i].style.filter = 'grayscale(1)';
-        }
+    if(debounceTimer) {
+      clearTimeout(debounceTimer);
     }
+
+    debounceTimer = setTimeout(function() {
+      console.log('ni?')
+      //looping all our elements
+      for(var i = 0; i < items.length; i++){
+          var item = items[i];
+          var top = item.calcY; // top of our element
+          var bottom = item.calcY + item.calcH; // bottom of our element
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // scroll position
+          var viewTop = scrollTop; // viewport top
+          var viewBottom = viewTop + window.innerHeight - 100; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
+
+          //is our element in view?
+          if( !item.reveal && (top <= viewBottom) && (bottom >= viewTop) ){
+            // reveal!
+              item.reveal = true;
+              items[i].style.opacity = 1;
+              items[i].style.filter = 'grayscale(0)';
+              items[i].style.transform = 'translateY(0)';
+
+          }else if(item.reveal && (top > viewBottom)){  // reset when we scroll up so we can replay the animation
+              items[i].style.opacity = 0;
+              item.reveal = false;
+              items[i].style.transform = 'translateY(20px)';
+              items[i].style.filter = 'grayscale(1)';
+          }
+      }
+    }, 100);
   }
 
   render() {

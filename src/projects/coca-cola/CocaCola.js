@@ -40,7 +40,7 @@ class CocaCola extends Component {
         <img className='imgMargin' src={cocacola3} alt='Charles de Dreuille' />
         <h2>Storytelling on Apple TV + Apple Watch</h2>
         <img className='imgMargin' src={cocacola4} alt='Charles de Dreuille' />
-        <h2>Share the Love using your heartbeat<br />See it LIVE on smart TVs & Journey’s Website</h2>
+        <h2>Share the Love using your heartbeat. See it LIVE on smart TVs & Journey’s Website</h2>
         <img className='imgMargin' src={cocacola5} alt='Charles de Dreuille' />
         <div className='shapes'>
           <div className='column'>

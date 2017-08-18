@@ -35,6 +35,7 @@
       max-width: 90%;
       font-size: 22px;
       line-height: 36px;
+      margin: 60px auto 40px;
     }
   }
 
@@ -118,6 +119,12 @@
       width: calc(33.33% - 80px);
       margin: 0 40px;
       text-align: center;
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 20px 0;
+      }
 
       span {
         color: #000;

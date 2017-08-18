@@ -24,7 +24,8 @@
       .CocaCola h2 {
         max-width: 90%;
         font-size: 22px;
-        line-height: 36px; } }
+        line-height: 36px;
+        margin: 60px auto 40px; } }
   .CocaCola .infos {
     border-bottom: 1px solid #E1E1E1;
     padding: 0 0 50px 0;
@@ -85,6 +86,11 @@
       width: calc(33.33% - 80px);
       margin: 0 40px;
       text-align: center; }
+      @media screen and (max-width: 800px) {
+        .CocaCola .shapes .column {
+          width: 100%;
+          text-align: left;
+          margin: 0 0 20px 0; } }
       .CocaCola .shapes .column span {
         color: #000;
         font-weight: 300; }

@@ -15,6 +15,8 @@ import thumbnail9 from './images/thumbnail9.jpg';
 import thumbnail10 from './images/thumbnail10.jpg';
 import thumbnail11 from './images/thumbnail11.jpg';
 import thumbnail12 from './images/thumbnail12.jpg';
+import thumbnail13 from './images/thumbnail13.jpg';
+import thumbnail14 from './images/thumbnail14.jpg';
 import './Home.css';
 
 
@@ -127,18 +129,23 @@ class Home extends Component {
               <div className='title'>Field.io</div>
               <div className='tags'>Website, Interactive</div>
             </Link>
-            <Link className="item" to='/sporty-henri'>
+            <Link className="item" to='/couturelab'>
               <img src={thumbnail7} alt='Project' />
+              <div className='title'>CoutureLab</div>
+              <div className='tags'>Website, E-Commerce</div>
+            </Link>
+            <Link className="item" to='/sporty-henri'>
+              <img src={thumbnail9} alt='Project' />
               <div className='title'>Sporty Henri</div>
               <div className='tags'>Branding, E-Commerce</div>
             </Link>
             <Link className="item" to='/harbour'>
-              <img src={thumbnail9} alt='Project' />
+              <img src={thumbnail11} alt='Project' />
               <div className='title'>Harbour Litigation Funding</div>
               <div className='tags'>Branding, Website</div>
             </Link>
             <Link className="item" to='/edclub'>
-              <img src={thumbnail11} alt='Project' />
+              <img src={thumbnail13} alt='Project' />
               <div className='title'>EdClub</div>
               <div className='tags'>Web App, Animations, Education</div>
             </Link>
@@ -167,8 +174,13 @@ class Home extends Component {
               <div className='title'>Floom</div>
               <div className='tags'>Website, Marketplace</div>
             </Link>
-            <a className="item" href='https://juun.io' target="_blank" rel="noopener noreferrer">
+            <Link className="item" to='/orogo'>
               <img src={thumbnail12} alt='Project' />
+              <div className='title'>Orogo</div>
+              <div className='tags'>App, Food Delivery</div>
+            </Link>
+            <a className="item" href='https://juun.io' target="_blank" rel="noopener noreferrer">
+              <img src={thumbnail14} alt='Project' />
               <div className='title'>Juun Project Planner</div>
               <div className='tags'>Experiment, Project Planning</div>
             </a>
@@ -206,33 +218,43 @@ class Home extends Component {
               <div className='title'>Christian Louboutin</div>
               <div className='tags'>Video, Leather Goods</div>
             </Link>
-            <Link className="item" to='/sporty-henri'>
+            <Link className="item" to='/couturelab'>
               <img src={thumbnail7} alt='Project' />
-              <div className='title'>Sporty Henri</div>
-              <div className='tags'>Branding, E-Commerce</div>
+              <div className='title'>CoutureLab</div>
+              <div className='tags'>Website, E-Commerce</div>
             </Link>
             <a className="item" href='https://lasurprise.io' target="_blank" rel="noopener noreferrer">
               <img src={thumbnail8} alt='Project' />
               <div className='title'>La Surprise.io</div>
               <div className='tags'>Experiment, Chatbot</div>
             </a>
-            <Link className="item" to='/harbour'>
+            <Link className="item" to='/sporty-henri'>
               <img src={thumbnail9} alt='Project' />
-              <div className='title'>Harbour Litigation Funding</div>
-              <div className='tags'>Branding, Website</div>
+              <div className='title'>Sporty Henri</div>
+              <div className='tags'>Branding, E-Commerce</div>
             </Link>
             <Link className="item" to='/floom'>
               <img src={thumbnail10} alt='Project' />
               <div className='title'>Floom</div>
               <div className='tags'>Website, Marketplace</div>
             </Link>
-            <Link className="item" to='/edclub'>
+            <Link className="item" to='/harbour'>
               <img src={thumbnail11} alt='Project' />
+              <div className='title'>Harbour Litigation Funding</div>
+              <div className='tags'>Branding, Website</div>
+            </Link>
+            <Link className="item" to='/orogo'>
+              <img src={thumbnail12} alt='Project' />
+              <div className='title'>Orogo</div>
+              <div className='tags'>App, Food Delivery</div>
+            </Link>
+            <Link className="item" to='/edclub'>
+              <img src={thumbnail13} alt='Project' />
               <div className='title'>EdClub</div>
               <div className='tags'>Web App, Animations, Education</div>
             </Link>
             <a className="item" href='https://juun.io' target="_blank" rel="noopener noreferrer">
-              <img src={thumbnail12} alt='Project' />
+              <img src={thumbnail14} alt='Project' />
               <div className='title'>Juun Project Planner</div>
               <div className='tags'>Experiment, Project Planning</div>
             </a>

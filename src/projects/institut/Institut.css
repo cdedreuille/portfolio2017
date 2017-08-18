@@ -85,6 +85,11 @@
       width: calc(33.33% - 80px);
       margin: 0 40px;
       text-align: center; }
+      @media screen and (max-width: 800px) {
+        .Institut .shapes .column {
+          width: 100%;
+          text-align: left;
+          margin: 0 0 20px 0; } }
       .Institut .shapes .column span {
         color: #000;
         font-weight: 300; }

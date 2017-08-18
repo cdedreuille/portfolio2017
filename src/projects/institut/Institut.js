@@ -8,6 +8,7 @@ import institut5 from './images/institut5.jpg';
 import institut6 from './images/institut6.jpg';
 import institut7 from './images/institut7.jpg';
 import institut8 from './images/institut8.jpg';
+import institut9 from './images/institut9.jpg';
 import Arrow from '../arrow/Arrow';
 import './Institut.css';
 
@@ -25,7 +26,7 @@ class Institut extends Component {
         <div className='infos'>
           <div className='column1'>
             <span>Brief</span>
-            <p>The Institut is a French consultancy agency. They help companies in difficulties to structure their team and projects in the most productive way in order to gain more strength and grow again. We built an identity that could adapt to any entity. The moving shape is a metaphor for all entities inside the company, always moving and perfecting themselves. Behind is a perfect circle. The entity is always trying to match the perfect circle, sometimes getting close, sometimes getting far but always in movement, perfecting itself.</p>
+            <p>The Institut is a French consultancy agency. They asked us to build an identity that could represent their clients and their transformations to suistainability.</p>
           </div>
           <div className='column2'>
             <span>Client</span>
@@ -51,7 +52,12 @@ class Institut extends Component {
             <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/institut-2.mp4" type="video/mp4" />
           </video>
         </MediaQuery>
-        <img className='imgMargin' src={institut2} alt='Charles de Dreuille' />
+        <MediaQuery query='(min-width: 800px)'>
+          <img className='imgMargin' src={institut2} alt='Charles de Dreuille' />
+        </MediaQuery>
+        <MediaQuery query='(max-width: 800px)'>
+          <img className='imgMargin' src={institut9} alt='Charles de Dreuille' />
+        </MediaQuery>
         <div className='shapes'>
           <div className='column'>
             <span>Perfect Circle</span>

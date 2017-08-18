@@ -50,7 +50,7 @@ class Project extends Component {
           var bottom = item.calcY + item.calcH; // bottom of our element
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // scroll position
           var viewTop = scrollTop; // viewport top
-          var viewBottom = viewTop + window.innerHeight - 40; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
+          var viewBottom = viewTop + window.innerHeight + 50; // viewport bottom / we start the video 50px before it comes in
 
           //is our element in view?
           if( (top <= viewBottom) && (bottom >= viewTop) ){

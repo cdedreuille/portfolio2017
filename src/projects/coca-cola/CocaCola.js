@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import cocacola1 from './images/cocacola1.jpg';
 import cocacola2 from './images/cocacola2.jpg';
 import cocacola3 from './images/cocacola3.jpg';
@@ -7,12 +8,8 @@ import cocacola5 from './images/cocacola5.jpg';
 import Arrow from '../arrow/Arrow';
 import './CocaCola.css';
 
-class CocaCola extends Component {
+class CocaCola extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="CocaCola">

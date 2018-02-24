@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import orogo1 from './images/orogo1.jpg';
 import orogo2 from './images/orogo2.jpg';
 import Arrow from '../arrow/Arrow';
 import './Orogo.css';
 
-class Orogo extends Component {
+class Orogo extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
+
   render() {
     return (
       <div className="Orogo">

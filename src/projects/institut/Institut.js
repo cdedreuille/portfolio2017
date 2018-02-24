@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import MediaQuery from 'react-responsive';
 import institut1 from './images/institut1.jpg';
 import institut2 from './images/institut2.jpg';
@@ -12,12 +13,12 @@ import institut9 from './images/institut9.jpg';
 import Arrow from '../arrow/Arrow';
 import './Institut.css';
 
-class Institut extends Component {
+class Institut extends Project {
 
   componentDidMount () {
     window.scrollTo(0, 0)
   }
-  
+
   render() {
     return (
       <div className="Institut">

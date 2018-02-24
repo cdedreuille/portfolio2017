@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import couturelab1 from './images/couturelab1.jpg';
 import couturelab2 from './images/couturelab2.jpg';
 import couturelab3 from './images/couturelab3.png';
@@ -6,12 +7,8 @@ import couturelab4 from './images/couturelab4.png';
 import Arrow from '../arrow/Arrow';
 import './Couturelab.css';
 
-class Couturelab extends Component {
+class Couturelab extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="Couturelab">

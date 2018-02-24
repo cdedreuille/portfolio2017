@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import Arrow from '../arrow/Arrow';
 import './ComingSoon.css';
 
-class ComingSoon extends Component {
+class ComingSoon extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="ComingSoon">

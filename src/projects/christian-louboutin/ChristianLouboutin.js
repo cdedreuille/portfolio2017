@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import MediaQuery from 'react-responsive';
 import christianlouboutin1 from './images/christianlouboutin1.jpg';
 import christianlouboutin2 from './images/christianlouboutin2.jpg';
@@ -12,12 +13,8 @@ import posterGuideline from './images/poster-guideline.jpg';
 import Arrow from '../arrow/Arrow';
 import './ChristianLouboutin.css';
 
-class ChristianLouboutin extends Component {
+class ChristianLouboutin extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="ChristianLouboutin">
@@ -44,7 +41,7 @@ class ChristianLouboutin extends Component {
         </div>
         <div className='logo'>
           <MediaQuery query='(min-width: 800px)'>
-            <video width="200" autoPlay loop>
+            <video width="200" playsInline autoPlay loop preload="auto">
               <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-logo.mp4" type="video/mp4" />
             </video>
           </MediaQuery>
@@ -56,18 +53,18 @@ class ChristianLouboutin extends Component {
         </div>
         <img className='imgMargin' src={christianlouboutin2} alt='Christian Louboutin' />
         <h2>Restructure of the entire site as mobile-first</h2>
-        <video className='vidMargin' width="100%" controls poster={posterBirds}>
+        <video className='vidMargin' width="100%" loop playsInline preload="auto" poster={posterBirds}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Birds+3.mp4" type="video/mp4" />
         </video>
         <img className='imgMargin' src={christianlouboutin3} alt='Christian Louboutin' />
-        <video className='vidMargin' width="100%" controls poster={posterNails}>
+        <video className='vidMargin' width="100%" loop playsInline preload="auto" poster={posterNails}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Nails+1.mp4" type="video/mp4" />
         </video>
-        <video className='vidMargin' width="100%" controls poster={posterFragrance}>
+        <video className='vidMargin' width="100%" loop playsInline preload="auto" poster={posterFragrance}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Fragrance+3.mp4" type="video/mp4" />
         </video>
         <h2>Digital Guideline<br /><br />For the latest version of the website I merged our digital branding guideline as a modular tool to build all the different pieces of the site.</h2>
-        <video className='vidMargin' width="100%" controls poster={posterGuideline}>
+        <video className='vidMargin' width="100%" loop playsInline preload="auto" poster={posterGuideline}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/louboutin-guideline-2.mp4" type="video/mp4" />
         </video>
         <h2>Monthly homepages</h2>

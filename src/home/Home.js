@@ -23,6 +23,12 @@ import './Home.css';
 var items, bodyRect, debounceTimer;
 
 class Home extends Component {
+  constructor() {
+      super();
+
+      this.initAnimation = this.initAnimation.bind(this);
+      this.revealAnimation = this.revealAnimation.bind(this);
+  }
 
   componentDidMount() {
     //scroll top
@@ -35,7 +41,7 @@ class Home extends Component {
       window.addEventListener('scroll', this.revealAnimation, true);
     }.bind(this), 300);
 
-    window.addEventListener('resize', this.initAnimation.bind(this), true);
+    window.addEventListener('resize', this.initAnimation, true);
   }
 
   componentWillUnmount() {
@@ -57,29 +63,25 @@ class Home extends Component {
           items[i].reveal  = false;
           items[i].calcY   = coords.top - bodyRect.top;
           items[i].calcH   = coords.height;
+          if(!items[i].classList.contains('reveal')){ // compensate for the translate
+            items[i].calcY -= 60;
+          }
       }
-
 
       this.revealAnimation();
   }
 
   revealAnimation() {
-    // if(debounceTimer) {
-    //   clearTimeout(debounceTimer);
-    // }
-
-    // debounceTimer = setTimeout(function() {
-      //looping all our elements
       for(var i = 0; i < items.length; i++){
           var item = items[i];
           var top = item.calcY; // top of our element
           var bottom = item.calcY + item.calcH; // bottom of our element
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // scroll position
           var viewTop = scrollTop; // viewport top
-          var viewBottom = viewTop + window.innerHeight - 40; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
+          var viewBottom = viewTop + window.innerHeight ; // viewport bottom / we allow the image to overlap 80px before the animation kicks in
 
           //is our element in view?
-          if( !item.reveal && (top <= viewBottom) && (bottom >= viewTop) ){
+          if( !item.reveal && (top <= (viewBottom  - 40)) && (bottom >= viewTop) ){
             // reveal!
               item.reveal = true;
               items[i].classList.add('reveal');
@@ -88,8 +90,8 @@ class Home extends Component {
               item.reveal = false;
               items[i].classList.remove('reveal');
           }
-      }
-    // });
+    }
+
   }
 
   render() {

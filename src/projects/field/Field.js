@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import field1 from './images/field1.jpg';
 import field2 from './images/field2.jpg';
 import field3 from './images/field3.jpg';
@@ -6,12 +7,8 @@ import field4 from './images/field4.jpg';
 import Arrow from '../arrow/Arrow';
 import './Field.css';
 
-class Field extends Component {
+class Field extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="Field">

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import louboutinspikes1 from './images/louboutinspikes1.jpg';
 import louboutinspikes2 from './images/louboutinspikes2.jpg';
 import louboutinspikes3 from './images/louboutinspikes3.jpg';
@@ -12,12 +13,8 @@ import louboutinspikes10 from './images/louboutinspikes10.png';
 import Arrow from '../arrow/Arrow';
 import './LouboutinSpikes.css';
 
-class LouboutinSpikes extends Component {
+class LouboutinSpikes extends Project {
 
-  componentDidMount () {
-    window.scrollTo(0, 0)
-  }
-  
   render() {
     return (
       <div className="LouboutinSpikes">
@@ -42,10 +39,10 @@ class LouboutinSpikes extends Component {
             SOS In Bel-Air - Production</p>
           </div>
         </div>
-        <video className='vidMargin videoRight' width="70%" controls poster={louboutinspikes9}>
+        <video className='vidMargin videoRight' width="70%" loop playsInline preload="auto" poster={louboutinspikes9}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Louboutin+Red+Spikes+1.mp4" type="video/mp4" />
         </video>
-        <video className='vidMargin' width="70%" controls poster={louboutinspikes10}>
+        <video className='vidMargin' width="70%" loop playsInline preload="auto" poster={louboutinspikes10}>
           <source src="https://s3.eu-west-2.amazonaws.com/cdedreuille-portfolio/Spikes+Gold+on+Black+4.mp4" type="video/mp4" />
         </video>
         <h2>Photos of the shoot with SOS in Bel-Air</h2>

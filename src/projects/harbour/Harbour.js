@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../../projects/Project';
 import harbour1 from './images/harbour1.jpg';
 import harbour2 from './images/harbour2.jpg';
 import harbour3 from './images/harbour3.jpg';
@@ -9,12 +10,12 @@ import harbour7 from './images/harbour7.png';
 import Arrow from '../arrow/Arrow';
 import './Harbour.css';
 
-class Harbour extends Component {
+class Harbour extends Project {
 
   componentDidMount () {
     window.scrollTo(0, 0)
   }
-  
+
   render() {
     return (
       <div className="Harbour">
